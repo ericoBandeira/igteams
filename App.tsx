@@ -2,6 +2,7 @@ import React from "react";
 
 import { Groups } from "./src/screens/Groups";
 import { NewGroup } from "@screens/NewGroup";
+import { Players } from "@screens/Players";
 import { Loading } from "@components/Loading";
 
 import { ThemeProvider } from "styled-components/native";
@@ -24,7 +25,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Groups /> : <Loading />}
+        {fontsLoaded ? <Players /> : <Loading />}
       </>
     </ThemeProvider>
   );
